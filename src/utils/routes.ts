@@ -1,14 +1,8 @@
 export const routes = {
   root(): string {
-    return '/';
+    return "/";
   },
-  about(): string {
-    return '/about';
-  },
-  blog(): string {
-    return '/blog';
-  },
-  contact(): string {
-    return '/contact';
+  projects(): string {
+    return "/projects";
   },
 };

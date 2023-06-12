@@ -14,16 +14,14 @@ export const Layout = ({ children }: LayoutProps) => {
     container: css({
       display: "flex",
       flexDirection: "column",
-      padding: "2rem 4rem 2rem 4rem",
+      padding: "2rem 16rem 2rem 16rem",
     }),
   };
   return (
     <>
       <Head />
-      <div css={styles.container}>
-        <Header />
-        <div>{children}</div>
-      </div>
+      <Header />
+      <div css={styles.container}>{children}</div>
     </>
   );
 };
