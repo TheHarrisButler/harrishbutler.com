@@ -20,16 +20,6 @@ const Home: NextPage = () => {
       display: "flex",
       width: "auto",
     }),
-    // const: css({
-    //   color: '#6888C2',
-    //   fontSize: '1.5rem',
-    //   paddingRight: '0.5rem',
-    // }),
-    // name: css({
-    //   color: '#1400FB',
-    //   fontSize: '2rem',
-    //   paddingRight: '0.5rem',
-    // }),
     type: css({
       color: "#7EE4AD",
       paddingRight: "0.5rem",

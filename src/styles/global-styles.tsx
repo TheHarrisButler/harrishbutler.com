@@ -13,11 +13,11 @@ export const GlobalStyles = () => {
 
         html,
         body {
-          width: 100%;
-          height: 100%;
+          display: flex;
+          flex-direction: column;
           background-color: #292929;
+          min-height: 100vh;
           color: white;
-          min-height: 100%;
           padding: 0;
           margin: 0;
         }
