@@ -2,10 +2,8 @@
 import type { NextPage } from "next";
 import { css } from "@emotion/react";
 
-// Utils
-import { Typewriter, Text } from "../utils";
-
 // Components
+import { Typewriter } from "../ui-components";
 import { Layout } from "../layout";
 
 const Home: NextPage = () => {
@@ -18,11 +16,8 @@ const Home: NextPage = () => {
     }),
     title: css({
       display: "flex",
+      flexDirection: "column",
       width: "auto",
-    }),
-    type: css({
-      color: "#7EE4AD",
-      paddingRight: "0.5rem",
     }),
     description: css({
       paddingTop: "4rem",
@@ -34,9 +29,11 @@ const Home: NextPage = () => {
     <Layout>
       <div css={styles.container}>
         <div css={styles.title}>
-          <div css={styles.type}>
-            <Typewriter fontSize={"2rem"} text={Text.types.webDev} />
+          <div style={{ fontSize: "2rem" }}>
+            {"Hi, my name is Harris and I am a "}
           </div>
+          <Typewriter />
+          
         </div>
       </div>
     </Layout>
