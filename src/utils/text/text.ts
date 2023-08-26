@@ -1,6 +1,9 @@
 export const Text = {
   types: {
-    webDev: 'Web Developer',
+    webDev: 'Web developer',
+    softwareEngineer: 'Software engineer',
+    golfer: 'Golfer',
+    homeCook: 'Home cook',
   },
   about: '',
   intro:
