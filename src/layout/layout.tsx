@@ -15,13 +15,22 @@ export const Layout = ({ children }: LayoutProps) => {
       display: "flex",
       flexDirection: "column",
       padding: "2rem 16rem 2rem 16rem",
+      maxWidth: "90rem",
+      margin: "auto",
+    }),
+    childrenContainer: css({
+      display: "flex",
+      flexDirection: "column",
+      padding: "13rem 5rem 0 5rem",
     }),
   };
   return (
     <>
       <Head />
-      <Header />
-      <div css={styles.container}>{children}</div>
+      <div css={styles.container}>
+        <Header />
+        <div css={styles.childrenContainer}>{children}</div>
+      </div>
     </>
   );
 };
