@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import { Spacer } from "../ui-components";
 import Image from "next/image";
 import golf from "../../public/images/harris-golf.jpg";
+import MyBio from "../page-content/mdx/my-bio.mdx";
 
 const styles = {
   container: css({
@@ -24,14 +25,27 @@ const styles = {
     display: "flex",
     flexDirection: "column",
   }),
+  bio: css({
+    display: "flex",
+    color: "#A9ADC0",
+    justifyContent: "space-between",
+  }),
+  bioParagraph: css({
+    fontSize: "1.5rem",
+    margin: "0 1rem",
+  }),
 };
 
 export const HowItStarted = () => (
   <div css={styles.container}>
-    <Spacer spacerType="horizontal" size={70} textContent="How it started..." />
+    <Spacer
+      spacerType="horizontal"
+      size={200}
+      textContent="How it started..."
+    />
     <div css={styles.infoContainer}>
       <div css={styles.intro}>{copyText.aboutMe.whereItStarted}</div>
-      <div css={styles.description}>{copyText.aboutMe.part1}</div>
+      <div css={styles.description}>{copyText.aboutMe.introduction}</div>
       <Spacer spacerType="vertical" size={3} />
       <Image
         sizes="100vw"
@@ -44,7 +58,10 @@ export const HowItStarted = () => (
         alt="Harris golf pic"
       />
       <Spacer spacerType="vertical" size={3} />
-      {/**Add a more indepth description of who I am and how I got to this point in my life */}
+      <div css={styles.bio}>
+        <p css={styles.bioParagraph}>{copyText.aboutMe.paragraph1}</p>
+        <p css={styles.bioParagraph}>{copyText.aboutMe.paragraph2}</p>
+      </div>
     </div>
   </div>
 );
