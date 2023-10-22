@@ -1,17 +1,22 @@
 // Components
 import { Link } from "../../ui-components";
-import NextLink from "next/link";
-import Image from "next/image";
+
 import twitterIcon from "../../../public/images/twitter.svg";
 import linkedInIcon from "../../../public/images/linkedin.svg";
 import gitHubIcon from "../../../public/images/github.svg";
 // Third Party
 import { css } from "@emotion/react";
+import NextLink from "next/link";
+import Image from "next/image";
 
 // Utils
 import { routes } from "../../utils";
 
-export const HeaderMenu = () => {
+export type HeaderMenuProps = {
+  currentPath: string;
+};
+
+export const HeaderMenu = ({ currentPath }: HeaderMenuProps) => {
   const styles = {
     container: css({
       display: "flex",
@@ -23,7 +28,11 @@ export const HeaderMenu = () => {
 
   return (
     <div css={styles.container}>
-      <Link label={"Projects"} href={routes.projects()} />
+      <Link
+        active={currentPath === "/projects"}
+        label={"Projects"}
+        href={routes.projects()}
+      />
       <Link
         target="_blank"
         label={"Substack"}

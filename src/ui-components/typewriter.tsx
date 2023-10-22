@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import { useEffect, useState, useRef, forwardRef } from "react";
-import { Text } from "../utils";
+import { copyText } from "../utils";
 
 export type TypewriterProps = {
   speed?: number;
@@ -83,7 +83,7 @@ export const Typewriter = (props: TypewriterProps) => {
   };
 
   const [currentlyTyping, setCurrentlyTyping] =
-    useState<keyof typeof Text.types>("webDev");
+    useState<keyof typeof copyText.types>("webDev");
 
   const onTypingEnd = () => {
     switch (currentlyTyping) {
@@ -108,7 +108,7 @@ export const Typewriter = (props: TypewriterProps) => {
         {...props}
         fontSize={"4rem"}
         onTypingEnd={onTypingEnd}
-        text={Text.types[currentlyTyping]}
+        text={copyText.types[currentlyTyping]}
       />
     </div>
   );

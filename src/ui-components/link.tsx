@@ -8,6 +8,7 @@ export type LinkProps = {
   size?: string;
   weight?: number;
   target?: string;
+  active?: boolean;
 };
 
 export const Link = ({
@@ -17,6 +18,7 @@ export const Link = ({
   size = "1rem",
   weight = 400,
   target,
+  active = false,
 }: LinkProps) => {
   const Link = styled.a({
     background: "#FFFFF",
@@ -25,25 +27,31 @@ export const Link = ({
     fontWeight: weight,
     position: "relative",
     textDecoration: "none",
-    [`:hover`]: {
+    ...(active && {
+      borderBottom: "2px solid white",
       color: "white",
-    },
-    [`::before`]: {
-      backgroundColor: "white",
-      bottom: 0,
-      content: "''",
-      display: "block",
-      height: "2px",
-      left: 0,
-      position: "absolute",
-      transform: "scaleX(0)",
-      transformOrigin: "top left",
-      transition: "transform 0.3s ease",
-      width: "100%",
-    },
-    [`:hover::before`]: {
-      transform: "scaleX(1)",
-    },
+    }),
+    ...(!active && {
+      [`:hover`]: {
+        color: "white",
+      },
+      [`::before`]: {
+        backgroundColor: "white",
+        bottom: 0,
+        content: "''",
+        display: "block",
+        height: "2px",
+        left: 0,
+        position: "absolute",
+        transform: "scaleX(0)",
+        transformOrigin: "top left",
+        transition: "transform 0.3s ease",
+        width: "100%",
+      },
+      [`:hover::before`]: {
+        transform: "scaleX(1)",
+      },
+    }),
   });
 
   return (
