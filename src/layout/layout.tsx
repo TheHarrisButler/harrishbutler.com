@@ -14,7 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
     container: css({
       display: "flex",
       flexDirection: "column",
-      padding: "2rem 16rem 2rem 16rem",
+      padding: "3rem 5rem 2rem 5rem",
       maxWidth: "90rem",
       margin: "auto",
     }),
