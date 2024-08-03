@@ -5,4 +5,10 @@ export const routes = {
   projects(): string {
     return "/projects";
   },
+  blog(): string {
+    return "/blog";
+  },
+  resume(): string {
+    return "/api/my-resume";
+  },
 };
