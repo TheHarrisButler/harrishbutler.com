@@ -28,24 +28,30 @@ export const HeaderMenu = ({ currentPath }: HeaderMenuProps) => {
 
   return (
     <div css={styles.container}>
-      <Link
+      <Link target="_blank" href={routes.resume()} label={"My Resume"} />
+      {/* <Link
+        active={currentPath === "/blog"}
+        label={"Blog"}
+        href={routes.projects()}
+      /> */}
+      {/* <Link
         active={currentPath === "/projects"}
         label={"Projects"}
         href={routes.projects()}
-      />
-      <Link
+      /> */}
+      {/* <Link
         target="_blank"
         label={"Substack"}
         href={"https://substack.com/@h16r"}
-      />
-      <NextLink target="_blank" href={"https://twitter.com/HarrisButler1"}>
-        <Image width={32} height={32} src={twitterIcon} alt="Twitter icon" />
-      </NextLink>
+      /> */}
       <NextLink
         target="_blank"
         href={"https://www.linkedin.com/in/harris-butler-371761173/"}
       >
         <Image width={32} height={32} src={linkedInIcon} alt="LinkedIn icon" />
+      </NextLink>
+      <NextLink target="_blank" href={"https://twitter.com/HarrisButler1"}>
+        <Image width={32} height={32} src={twitterIcon} alt="Twitter icon" />
       </NextLink>
       <NextLink target="_blank" href={"https://github.com/TheHarrisButler"}>
         <Image width={32} height={32} src={gitHubIcon} alt="GitHub icon" />

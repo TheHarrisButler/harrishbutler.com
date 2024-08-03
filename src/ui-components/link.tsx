@@ -1,4 +1,3 @@
-// UI
 import styled from "@emotion/styled";
 
 export type LinkProps = {
