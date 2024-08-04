@@ -9,6 +9,6 @@ export const routes = {
     return "/blog";
   },
   resume(): string {
-    return "/api/my-resume";
+    return "/api/resume";
   },
 };
