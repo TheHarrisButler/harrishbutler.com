@@ -28,12 +28,12 @@ export const HeaderMenu = ({ currentPath }: HeaderMenuProps) => {
 
   return (
     <div css={styles.container}>
-      <Link target="_blank" href={routes.resume()} label={"My Resume"} />
       {/* <Link
         active={currentPath === "/blog"}
         label={"Blog"}
         href={routes.projects()}
       /> */}
+      <Link target="_blank" href={routes.resume()} label={"Resume"} />
       {/* <Link
         active={currentPath === "/projects"}
         label={"Projects"}
