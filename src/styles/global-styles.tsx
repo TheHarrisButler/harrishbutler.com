@@ -4,7 +4,7 @@ export const GlobalStyles = () => {
   return (
     <EmotionGlobal
       styles={css`
-        @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;600;700&display=swap");
 
         * {
           font-family: IBM Plex Sans, sans-serif;
@@ -20,8 +20,6 @@ export const GlobalStyles = () => {
           color: white;
           padding: 0;
           margin: 0;
-        }
-        h1 {
         }
       `}
     />
