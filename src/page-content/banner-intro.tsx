@@ -29,6 +29,8 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     width: "auto",
+    height: "100vh" /* Full viewport height */,
+    scrollSnapAlign: "start",
   }),
   hello: css({
     fontSize: "2rem",

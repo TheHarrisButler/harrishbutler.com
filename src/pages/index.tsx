@@ -8,7 +8,6 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <BannerIntro />
-      <Spacer spacerType="vertical" size={30} />
       <HowItStarted />
     </Layout>
   );

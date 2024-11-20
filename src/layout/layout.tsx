@@ -17,11 +17,12 @@ export const Layout = ({ children }: LayoutProps) => {
       padding: "3rem 5rem 2rem 5rem",
       maxWidth: "90rem",
       margin: "auto",
+      height: "100vh",
     }),
     childrenContainer: css({
       display: "flex",
       flexDirection: "column",
-      padding: "13rem 5rem 0 5rem",
+      padding: "20rem 5rem 0 5rem",
     }),
   };
   return (
