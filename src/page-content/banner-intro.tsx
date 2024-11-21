@@ -1,6 +1,8 @@
 import { Typewriter, Link } from "../ui-components";
 import { copyText } from "../utils";
+import Image from "next/image";
 import { css, keyframes } from "@emotion/react";
+import me from "../../public/images/harris.jpg";
 
 const fadeInFromBottom = keyframes`
   from {
@@ -40,13 +42,23 @@ const styles = {
     paddingTop: "2rem",
     fontSize: "2rem",
     color: "#A9ADC0",
-    width: "35rem",
+    width: "50rem",
     animation: `${fadeInFromBottom} 0.5s ease-in;`,
   }),
 };
 
 export const BannerIntro = () => (
   <div css={styles.container}>
+    <Image
+      src={me}
+      css={{
+        borderRadius: "5rem",
+        width: "300px",
+        height: "300px",
+        marginBottom: "10rem",
+      }}
+      alt="Harris golf pic"
+    />
     <div css={styles.hello}>{copyText.intro.hello}</div>
     <Typewriter />
     <div css={styles.description}>

@@ -22,7 +22,7 @@ export const Layout = ({ children }: LayoutProps) => {
     childrenContainer: css({
       display: "flex",
       flexDirection: "column",
-      padding: "20rem 5rem 0 5rem",
+      padding: "15rem 5rem 0 5rem",
     }),
   };
   return (
