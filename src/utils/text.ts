@@ -6,7 +6,7 @@ export const copyText = {
   },
   intro: {
     hello: "Hi, my name is Harris and I'm a",
-    one: `I've been building mobile and web applications for the past 4 years. Currently, I work at `,
+    one: `I've been building web applications for the past 4 years. Currently, I work at `,
     whereImWorking: {
       part1: ` as a Senior Software Engineer on the `,
       part2: ` team. My focus is on developing JavaScript dependencies that power shipping and logistics 
