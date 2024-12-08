@@ -7,11 +7,9 @@ const Blog: NextPage = () => {
   const [blgIdx, setBlgIdx] = useState<number>();
   const blogs = [
     {
-      title: "Write Better React",
+      title: "Test Blog Title",
       date: "10/03/2024",
     },
-    { title: "Play first practice", date: "8/02/2024" },
-    { title: "Something to think about", date: "6/14/2024" },
   ];
 
   return (
