@@ -8,7 +8,6 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <BannerIntro />
-      <HowItStarted />
     </Layout>
   );
 };

@@ -47,5 +47,8 @@ export const styles = {
     height: "300px",
     marginBottom: "10rem",
     animation: `${fadeInFromTop} 0.5s ease-in;`,
+    "@media (max-height: 915px)": {
+      display: "none",
+    },
   }),
 };

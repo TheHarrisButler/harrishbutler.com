@@ -6,7 +6,7 @@ import me from "../../../public/images/harris.jpg";
 
 export const BannerIntro = () => (
   <div css={styles.container}>
-    <Image src={me} css={styles.pic} alt="Picture of me" />
+    <Image src={me} css={styles.pic} alt="Picture of me"/>
     <div css={styles.hello}>{copyText.intro.hello}</div>
     <Typewriter />
     <div css={styles.description}>
