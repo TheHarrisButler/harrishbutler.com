@@ -26,9 +26,11 @@ export const styles = {
   container: css({
     display: "flex",
     flexDirection: "column",
+    padding: "11rem 5rem 10rem 5rem",
+    justifyContent: "space-between",
+    position: "relative",
     width: "auto",
-    height: "100vh" /* Full viewport height */,
-    scrollSnapAlign: "start",
+    height: "95vh",
   }),
   hello: css({
     fontSize: "2rem",
@@ -38,14 +40,14 @@ export const styles = {
     paddingTop: "2rem",
     fontSize: "1.75rem",
     color: "#A9ADC0",
-    maxWidth: "53rem",
+    maxWidth: "55rem",
     animation: `${fadeInFromBottom} 0.5s ease-in;`,
   }),
   pic: css({
     borderRadius: "5rem",
     maxWidth: "300px",
+    marginBottom: "2rem",
     height: "300px",
-    marginBottom: "10rem",
     animation: `${fadeInFromTop} 0.5s ease-in;`,
     "@media (max-height: 915px)": {
       display: "none",

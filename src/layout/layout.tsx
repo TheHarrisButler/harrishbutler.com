@@ -12,17 +12,10 @@ export interface LayoutProps {
 export const Layout = ({ children }: LayoutProps) => {
   const styles = {
     container: css({
-      display: "flex",
-      flexDirection: "column",
-      padding: "3rem 5rem 2rem 5rem",
+      paddingTop: "2rem",
       maxWidth: "90rem",
       margin: "auto",
       height: "100vh",
-    }),
-    childrenContainer: css({
-      display: "flex",
-      flexDirection: "column",
-      padding: "15rem 5rem 0 5rem",
     }),
   };
   return (
@@ -30,7 +23,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <Head />
       <div css={styles.container}>
         <Header />
-        <div css={styles.childrenContainer}>{children}</div>
+        {children}
       </div>
     </>
   );

@@ -9,14 +9,13 @@ export const GlobalStyles = () => {
         * {
           font-family: IBM Plex Sans, sans-serif;
           font-size: 16px;
+          box-sizing: border-box;
         }
 
         html,
         body {
-          display: flex;
-          flex-direction: column;
+          display: block;
           background-color: #292929;
-          min-height: 100vh;
           color: white;
           padding: 0;
           margin: 0;
