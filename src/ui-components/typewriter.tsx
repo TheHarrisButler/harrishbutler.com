@@ -78,26 +78,22 @@ export const Typewriter = (props: TypewriterProps) => {
   const styles = {
     type: css({
       color: "#7EE4AD",
-      paddingRight: "0.5rem",
     }),
   };
 
   const [currentlyTyping, setCurrentlyTyping] =
-    useState<keyof typeof copyText.types>("webDev");
+    useState<keyof typeof copyText.types>("softwareEngineer");
 
   const onTypingEnd = () => {
     switch (currentlyTyping) {
-      case "webDev":
-        setCurrentlyTyping("softwareEngineer");
-        break;
       case "softwareEngineer":
-        setCurrentlyTyping("golfer");
+        setCurrentlyTyping("runner");
         break;
-      case "golfer":
+      case "runner":
         setCurrentlyTyping("homeCook");
         break;
       case "homeCook":
-        setCurrentlyTyping("webDev");
+        setCurrentlyTyping("softwareEngineer");
         break;
     }
   };

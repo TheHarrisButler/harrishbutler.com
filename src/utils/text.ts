@@ -1,16 +1,16 @@
 export const copyText = {
   types: {
-    webDev: "Web developer",
     softwareEngineer: "Software engineer",
-    golfer: "Golfer",
+    runner: "Runner",
     homeCook: "Home cook",
   },
   intro: {
     hello: "Hi, my name is Harris and I'm a",
-    turnedMyPassion: `I turned my passion into a job. I'm a software engineer with a focus on full stack web development. I currently work at `,
+    one: `I've been building web applications for the past 4 years. Currently, I work at `,
     whereImWorking: {
-      part1: ` as a Software Engineer on the `,
-      part2: ` team.`,
+      part1: ` as a Senior Software Engineer on the `,
+      part2: ` team. My current focus is on building JavaScript dependencies that power shipping and logistics 
+      for e-commerce platforms. I'm interested in almost everything. I played college golf at the University of Texas at Tyler`,
     },
   },
   aboutMe: {

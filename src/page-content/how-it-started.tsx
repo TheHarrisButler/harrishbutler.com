@@ -9,6 +9,8 @@ const styles = {
   container: css({
     display: "flex",
     width: "full",
+    height: "100vh" /* Full viewport height */,
+    scrollSnapAlign: "start",
   }),
   intro: css({
     fontSize: "2rem",
