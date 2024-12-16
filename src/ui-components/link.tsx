@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
 export type LinkProps = {
   defaultColor?: string;
@@ -19,22 +19,23 @@ export const Link = ({
   target,
   active = false,
 }: LinkProps) => {
-  const Link = styled.a({
+  const linkStyles = css({
     background: "#FFFFF",
     color: defaultColor ?? "#A9ADC0",
     fontSize: size,
     fontWeight: weight,
     position: "relative",
     textDecoration: "none",
+    whiteSpace: "nowrap",
     ...(active && {
       borderBottom: "2px solid white",
       color: "white",
     }),
     ...(!active && {
-      [`:hover`]: {
+      [":hover"]: {
         color: "white",
       },
-      [`::before`]: {
+      ["::before"]: {
         backgroundColor: "white",
         bottom: 0,
         content: "''",
@@ -47,15 +48,15 @@ export const Link = ({
         transition: "transform 0.3s ease",
         width: "100%",
       },
-      [`:hover::before`]: {
+      [":hover::before"]: {
         transform: "scaleX(1)",
       },
     }),
   });
 
   return (
-    <Link target={target} href={href}>
+    <a css={linkStyles} target={target} href={href}>
       {label}
-    </Link>
+    </a>
   );
 };
