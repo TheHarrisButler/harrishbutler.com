@@ -26,19 +26,19 @@ export const styles = {
   container: css({
     display: "flex",
     flexDirection: "column",
-    padding: "11rem 5rem 10rem 5rem",
+    padding: "11rem 5rem 10rem 6rem",
     justifyContent: "space-between",
     position: "relative",
     width: "auto",
     height: "95vh",
   }),
   hello: css({
-    fontSize: "2rem",
+    fontSize: "1.75rem",
     animation: `${fadeInFromTop} 0.5s ease-in;`,
   }),
   description: css({
     paddingTop: "2rem",
-    fontSize: "1.75rem",
+    fontSize: "1.55rem",
     color: "#A9ADC0",
     maxWidth: "55rem",
     animation: `${fadeInFromBottom} 0.5s ease-in;`,

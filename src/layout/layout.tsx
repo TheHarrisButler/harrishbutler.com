@@ -14,6 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
     container: css({
       paddingTop: "2rem",
       maxWidth: "90rem",
+      width: "75%",
       margin: "auto",
       height: "100vh",
     }),

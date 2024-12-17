@@ -13,7 +13,7 @@ export const BannerIntro = () => (
       <div css={styles.description}>
         {copyText.intro.one}
         <Link
-          size={"1.75rem"}
+          size={"1.55rem"}
           href="https://auctane.com/"
           label="Auctane"
           active
@@ -21,7 +21,7 @@ export const BannerIntro = () => (
         />
         {copyText.intro.whereImWorking.part1}
         <Link
-          size={"1.75rem"}
+          size={"1.55rem"}
           href="https://docs.shipstation.com/"
           label="ShipStation API"
           active
