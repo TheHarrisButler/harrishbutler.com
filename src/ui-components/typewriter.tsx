@@ -102,7 +102,7 @@ export const Typewriter = (props: TypewriterProps) => {
     <div css={styles.type}>
       <TypewriterAction
         {...props}
-        fontSize={"4rem"}
+        fontSize={"3.25rem"}
         onTypingEnd={onTypingEnd}
         text={copyText.types[currentlyTyping]}
       />
