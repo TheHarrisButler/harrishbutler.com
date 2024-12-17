@@ -6,10 +6,10 @@ export const copyText = {
   },
   intro: {
     hello: "Hi, my name is Harris and I'm a",
-    one: `I've been building web applications for the past 4 years. Currently, I work at `,
+    one: `I've been building web applications for the past 4 years. I'm currently at `,
     whereImWorking: {
       part1: ` as a Senior Software Engineer on the `,
-      part2: ` team. My current focus is on building JavaScript dependencies that power shipping and logistics 
+      part2: ` team. My current focus is building JavaScript dependencies that power shipping and logistics 
       for e-commerce platforms. I'm interested in almost everything. I played college golf at the University of Texas at Tyler`,
     },
   },
